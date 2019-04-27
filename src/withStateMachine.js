@@ -146,7 +146,7 @@ const withStateMachine = (statechart, options = {}) => Component => {
         [channel]: {
           actions: this.state.machineState.actions,
           machineState:
-            this.state.machineState.toString() ||
+            this.state.machineState.toStrings() ||
             this.stringify(this.state.machineState.value),
         },
       }
